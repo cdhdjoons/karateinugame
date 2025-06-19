@@ -111,18 +111,19 @@ export default function DailyTask() {
                 >
                     <div className="w-full h-[40%] flex flex-col justify-between items-start ">
                         <div className="w-full max-w-[500px] flex flex-col items-start relative ">
-                            <div className="w-full aspect-[612/189] relative">
+                            <div className="w-full aspect-[704/160] relative">
                                 <Image
-                                    src="/image/hump_title_bg.png"
+                                    src="/image/kinu_title_bg.png"
                                     alt="main logo"
                                     layout="fill"
                                     objectFit="cover"
                                 />
-                                <p className="text-white absolute left-[5%] top-[45%] -translate-y-[50%] text-[5.5vmin] sm:text-[4.5vmin] xs:text-[6.5vmin]">Egg Earn<br /><span className="text-[7.5vmin] sm:text-[5.5vmin]">Humpty Dumpty Ai</span></p>
                             </div>
                         </div>
-                        <div className=" w-full flex flex-col px-[3%] py-[1%]">
-                            <p className="text-white text-center text-[4vmin] sm:text-[3vmin]"><span className="font-bold text-[5vmin]">Use  HUMP to purchase a participation AI PASS.<br /></span>
+                        <div className=" w-full flex flex-col px-[3%] py-[1%]  bg-contain bg-center bg-no-repeat"
+                        style={{backgroundImage: 'url(/image/kinu_x_bg.svg)'}}
+                        >
+                            <p className="text-white text-center text-[3vmin] sm:text-[3vmin] font-subfont"><span className=" text-[5vmin] font-mainfont">Use KINU Points to unlock your AI Participation Pass.<br /></span>
                                 Once you hold a ticket, you can submit your Story and start earning rewards based on your contribution.</p>
                         </div>
                         <Tickets />
@@ -131,15 +132,15 @@ export default function DailyTask() {
                         <div className=" w-full h-full flex flex-col justify-evenly items-center relative gap-2">
                             {/* <p className=" text-[1.5vmax] sm:text-[1.3vmax] text-[#00FF08] font-bold">{remainHours}/24h</p> */}
                             <div className=" w-[90%] relative flex justify-between items-center">
-                                <div className=" w-[15vmin] sm:w-[9vmin] aspect-[80/79] relative ">
+                                <div className=" w-[15vmin] sm:w-[9vmin] aspect-[80/80] relative ">
                                     <Image
-                                        src="/image/hump_daily_icon.png"
+                                        src="/image/kinu_game.png"
                                         alt="meatIcon"
                                         layout="fill"
                                         objectFit="cover"
                                     />
                                 </div>
-                                <div className={`flex flex-col items-start w-[55%] ${inter.className}`} >
+                                <div className={`flex flex-col items-start w-[55%] font-subfont`} >
                                     <p className=" text-[2.1vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] font-bold text-white">Daily Task</p>
                                     <p className=" text-[1.5vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0]">Earn Every day</p>
                                 </div>
@@ -149,7 +150,7 @@ export default function DailyTask() {
                                 <div className=" w-full flex justify-between items-center border-b-[0.5px] border-b-black py-[1%]">
                                     <div className=" w-[12vmin] sm:w-[6vmin] aspect-[72/74] relative ">
                                         <Image
-                                            src="/image/hump_game.png"
+                                            src="/image/kinu_game.png"
                                             alt="meatIcon"
                                             layout="fill"
                                             objectFit="cover"
@@ -157,7 +158,7 @@ export default function DailyTask() {
                                     </div>
                                     <div className=" flex flex-col items-start w-[55%] ">
                                         <p className=" text-[2.1vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] font-bold text-black">Daily Reward</p>
-                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0]">100 HUMP</p>
+                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0] font-subfont">100 KINU</p>
                                     </div>
                                     <div className={` w-[20%] bg-[#767DFF] h-[50%] rounded-3xl relative duration-300 transition-all ${disabledDaily[0] ? 'opacity-100' : 'opacity-20'}`}>
                                         <div onClick={() => dailyHandleClick(0, 100)} className={`w-[40%] duration-300 aspect-[1/1] transition-all rounded-full bg-white absolute top-[50%] -translate-y-[50%] ${disabledDaily[0] ? "-translate-x-[100%] left-full" : "translate-x-0 left-0"}`}></div>
@@ -166,7 +167,7 @@ export default function DailyTask() {
                                 <div className=" w-full flex justify-between items-center py-[2%] ">
                                     <div className=" w-[12vmin] sm:w-[6vmin] aspect-[72/74] relative ">
                                         <Image
-                                            src="/image/hump_game.png"
+                                            src="/image/kinu_game.png"
                                             alt="meatIcon"
                                             layout="fill"
                                             objectFit="cover"
@@ -174,7 +175,7 @@ export default function DailyTask() {
                                     </div>
                                     <div className=" flex flex-col items-start w-[55%] ">
                                         <p className=" text-[2.1vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] font-bold text-black">RT our Post</p>
-                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0]">1 HUMP</p>
+                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0] font-subfont">1 KINU</p>
                                     </div>
                                     <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className={` w-[20%] bg-[#767DFF] h-[50%] rounded-3xl relative duration-300 transition-all ${disabledDaily[1] ? 'opacity-100' : 'opacity-20'}`}>
                                         <div onClick={() => dailyHandleClick(1, 1000)} className={`w-[40%] duration-300 aspect-[1/1] transition-all rounded-full bg-white absolute top-[50%] -translate-y-[50%] ${disabledDaily[1] ? "-translate-x-[100%] left-full" : "translate-x-0 left-0"}`}></div>
@@ -183,15 +184,15 @@ export default function DailyTask() {
                             </div>
 
                             <div className=" w-[90%] relative flex justify-between items-center">
-                                <div className=" w-[15vmin] sm:w-[9vmin] aspect-[80/79] relative ">
+                                <div className=" w-[15vmin] sm:w-[9vmin] aspect-[80/80] relative ">
                                     <Image
-                                        src="/image/hump_daily_icon.png"
+                                        src="/image/kinu_game.png"
                                         alt="meatIcon"
                                         layout="fill"
                                         objectFit="cover"
                                     />
                                 </div>
-                                <div className={`flex flex-col items-start w-[55%] ${inter.className}`} >
+                                <div className={`flex flex-col items-start w-[55%] font-subfont`} >
                                     <p className=" text-[2.1vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] font-bold text-white">Option Task</p>
 
                                 </div>
@@ -201,7 +202,7 @@ export default function DailyTask() {
                                 <div className=" w-full flex justify-between items-center border-b-[0.5px] border-b-black py-[1%]">
                                     <div className=" w-[12vmin] sm:w-[6vmin] aspect-[72/74] relative ">
                                         <Image
-                                            src="/image/hump_game.png"
+                                            src="/image/kinu_game.png"
                                             alt="meatIcon"
                                             layout="fill"
                                             objectFit="cover"
@@ -209,7 +210,7 @@ export default function DailyTask() {
                                     </div>
                                     <div className=" flex flex-col items-start w-[55%] ">
                                         <p className=" text-[2.1vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] font-bold text-black">Follow X</p>
-                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0]">1K HUMP</p>
+                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0] font-subfont">1K KINU</p>
                                     </div>
                                     <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className={` w-[20%] bg-[#767DFF] h-[50%] rounded-3xl relative duration-300 transition-all ${disabledTask[0] ? 'opacity-100' : 'opacity-20'}`}>
                                         <div onClick={() => handleClick(0, 1000)} className={`w-[40%] duration-300 aspect-[1/1] transition-all rounded-full bg-white absolute top-[50%] -translate-y-[50%] ${disabledTask[0] ? "-translate-x-[100%] left-full" : "translate-x-0 left-0"}`}></div>
@@ -218,7 +219,7 @@ export default function DailyTask() {
                                 <div className=" w-full flex justify-between items-center py-[2%] ">
                                     <div className=" w-[12vmin] sm:w-[6vmin] aspect-[72/74] relative ">
                                         <Image
-                                            src="/image/hump_game.png"
+                                            src="/image/kinu_game.png"
                                             alt="meatIcon"
                                             layout="fill"
                                             objectFit="cover"
@@ -226,7 +227,7 @@ export default function DailyTask() {
                                     </div>
                                     <div className=" flex flex-col items-start w-[55%] ">
                                         <p className=" text-[2.1vmax] xs:text-[2.3vmax] sm:text-[2.2vmin] font-bold text-black">Invite 5 users</p>
-                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0]">5k HUMP | {inviteCount}/5users</p>
+                                        <p className=" text-[1.8vmax] xs:text-[1.5vmax] sm:text-[1.9vmin] text-[#C0C0C0] font-subfont">5k KINU | {inviteCount}/5users</p>
                                     </div>
                                     <div className={` w-[20%] bg-[#767DFF] h-[50%] rounded-3xl relative duration-300 transition-all ${disabledTask[1] ? 'opacity-100' : 'opacity-20'}`}>
                                         <div onClick={() => handleClick(1, 5000)} className={`w-[40%] duration-300 aspect-[1/1] transition-all rounded-full bg-white absolute top-[50%] -translate-y-[50%] ${disabledTask[1] ? "-translate-x-[100%] left-full" : "translate-x-0 left-0"}`}></div>

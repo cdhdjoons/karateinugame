@@ -67,8 +67,8 @@ export default function LeaderBoard() {
             >
                 <div className=" w-full h-full max-w-[500px] relative flex flex-col justify-evenly items-center " >
                     <div className=" w-[90%] flex justify-between items-center ">
-                        <p className=" text-center text-[4vmax] sm:text-[4vmin] text-white font-bold [-webkit-text-stroke:0.5px_black] ">Leaderboard</p>
-                        <p className=" text-center text-[2.5vmax] text-[#00FF11] font-normal [-webkit-text-stroke:0.5px_black] ">{holderCount}k Holders</p>
+                        <p className=" text-center text-[4.5vmax] sm:text-[4vmin] text-white font-bold [-webkit-text-stroke:0.5px_black] ">Leaderboard</p>
+                        <p className=" text-center text-[2.5vmax] text-[#E55E00] font-normal [-webkit-text-stroke:0.5px_black] ">{holderCount}k Holders</p>
                     </div>
                     <div className="  w-[90%] h-[90%] py-3 flex justify-center items-center  " >
                         <div className="scroll-container w-[95%] h-[95%] flex flex-col gap-3 overflow-scroll overflow-x-hidden px-[2%]">
@@ -76,7 +76,7 @@ export default function LeaderBoard() {
                                 <div key={ranker.name} className="w-full flex justify-stretch items-center bg-balanceBg rounded-3xl " >
                                     <div className=" relative w-[20%] aspect-[72/74]">
                                         <Image
-                                            src="/image/hump_game.png"
+                                            src="/image/kinu_game.png"
                                             alt="main logo"
                                             layout="fill"
                                             objectFit="cover"

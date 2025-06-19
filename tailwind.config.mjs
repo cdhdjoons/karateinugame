@@ -21,7 +21,8 @@ export default {
         borderBlack: 'rgb(0, 0, 0, 0.3)',
       },
       fontFamily: {
-        appleNeo: ["var(--font-appleSd-gothic)", "sans-serif"],
+        mainfont: ['var(--font-mainfont)', 'sans-serif'],
+        subfont: ['var(--font-subfont)', 'sans-serif'],
       },
       screens: {
         'xs': {'max': '345px'}, // 345px 이하일 때 적용

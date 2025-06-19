@@ -53,11 +53,11 @@ export default function Tickets() {
 
     return (
         <div className="w-full flex justify-center relative gap-[5%]  ">
-            <div onClick={() => getTicket(1, 500)} className="w-[45%] rounded-[24px] py-1  flex flex-col justify-center items-center relative bg-[#EF8F00] active:scale-90 transition-transform duration-100">
-                <p className=" text-black text-[4vmin] sm:text-[2vmin] z-10">1Ticket / 500 HUMP</p>
+            <div onClick={() => getTicket(1, 500)} className="w-[45%] rounded-[24px] py-1  flex flex-col justify-center items-center relative bg-[#A7EF00] active:scale-90 transition-transform duration-100">
+                <p className=" text-black text-[4.5vmin] sm:text-[2vmin] z-10 mt-1">1PASS / 500 KINU</p>
             </div>
-            <div onClick={() => getTicket(5, 2000)} className="w-[45%] rounded-[24px] py-1 flex flex-col justify-center items-center relative bg-[#EF8F00] active:scale-90 transition-transform duration-100">
-                <p className=" text-black text-[4vmin] sm:text-[2vmin]">5Ticket / 2K HUMP</p>
+            <div onClick={() => getTicket(5, 2000)} className="w-[45%] rounded-[24px] py-1 flex flex-col justify-center items-center relative bg-[#A7EF00] active:scale-90 transition-transform duration-100">
+                <p className=" text-black text-[4.5vmin] sm:text-[2vmin] mt-1">5PASS / 2K KINU</p>
             </div>
             {
                 pop && (

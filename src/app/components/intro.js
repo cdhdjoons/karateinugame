@@ -24,22 +24,21 @@ export default function Intro() {
     return (
         <AnimatePresence mode="wait">
             {showIntro ? (
-                <motion.div className=" z-[99] w-full h-lvh max-w-[500px] max-h-[1080px] bg-cover bg-no-repeat
+                <motion.div className=" z-[99] w-full h-lvh max-w-[500px] max-h-[1080px] bg-[length:100%_100%] bg-center bg-no-repeat
               flex justify-center items-center overflow-hidden absolute duration-300 "
-              style={{backgroundImage: 'url(/image/hump_intro_bg.png)'}}
+              style={{backgroundImage: 'url(/image/kinu_intro_bg.png)'}}
                     initial={false}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 1 }}
                 >
-                    <div className="w-full sm:w-[25vmax] text-center text-[5vmax] relative">
-                        {/* <Image
-                            src="/image/hump_intro_logo.png"
+                    <div className="w-[30vmax] sm:w-[25vmax] text-center aspect-[449/158] text-[5vmax] relative">
+                        <Image
+                            src="/image/kinu_intro_logo.png"
                             alt="main logo"
                             layout="fill"
                             objectFit="cover"
-                        /> */}
-                        KARATE INU
+                        />
                     </div>
                 </motion.div>) : ''}
         </AnimatePresence>

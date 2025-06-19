@@ -121,14 +121,14 @@ export default function Balance() {
       >
         <div className="w-full h-full relative flex flex-col items-center justify-evenly " >
           <div className="w-full max-w-[500px] flex flex-col items-start relative ">
-            <div className="w-full aspect-[612/189] relative">
+            <div className="w-full aspect-[704/160] relative">
               <Image
-                src="/image/hump_title_bg.png"
+                src="/image/kinu_title_bg.png"
                 alt="main logo"
                 layout="fill"
                 objectFit="cover"
               />
-              <p className="text-white absolute left-[5%] top-[45%] -translate-y-[50%] text-[5.5vmin] sm:text-[4.5vmin] xs:text-[6.5vmin]">AI Egg<br /><span className="text-[7.5vmin] sm:text-[5.5vmin]">Humpty Dumpty Ai</span></p>
+
             </div>
           </div>
           <div className="w-full h-[85%] flex justify-center items-center relative">
