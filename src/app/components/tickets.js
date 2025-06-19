@@ -61,7 +61,7 @@ export default function Tickets() {
             </div>
             {
                 pop && (
-                    <div className=" absolute w-[60%] top-[-550%] left-1/2 -translate-x-1/2 z-[999] "><Alert severity="error">Need more SAGU.</Alert></div>
+                    <div className=" absolute w-[60%] top-[-550%] left-1/2 -translate-x-1/2 z-[999] "><Alert severity="error">Need more KINU.</Alert></div>
                 )
             }
             

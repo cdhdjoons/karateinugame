@@ -7,7 +7,7 @@ let tonConnect = null;
 export const getTonConnectInstance = () => {
   if (!tonConnect) {
     tonConnect = new TonConnect({
-      manifestUrl: "https://humpgame.vercel.app/tonconnect-manifest.json",
+      manifestUrl: "https://karateinugame.vercel.app/tonconnect-manifest.json",
     });
   }
   return tonConnect;

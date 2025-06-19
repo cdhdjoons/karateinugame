@@ -145,7 +145,7 @@ export default function ClaimTimer() {
                 transition={{ duration: 0.3 }}
             >
                 <div className="  w-[90%] h-[12%] flex flex-col justify-evenly items-center relative ">
-                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://x.com/karateinuai" target="_blank" rel="noopener noreferrer" 
                     className=" bg-contain bg-center bg-no-repeat flex justify-evenly items-center w-full h-full py-[1%] px-4"
                     style={{backgroundImage: 'url(/image/kinu_x_bg.svg)'}}
                     >
