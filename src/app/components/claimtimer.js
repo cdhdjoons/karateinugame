@@ -161,9 +161,9 @@ export default function ClaimTimer() {
                         <p className="text-white h-full mt-[18%] font-bold">...</p>
                     </a>
                 </div>
-                <div className=" w-full h-[20%] flex justify-evenly  ">
-                    <div className=" py-[2.5%] bg-mainBoxBg border-4 border-[#A41C1C] rounded-[23px] w-[47%] flex flex-col justify-between items-center relative">
-                        <div className=" w-full flex flex-col justify-evenly items-center">
+                <div className=" w-full h-[25%] flex justify-evenly  ">
+                    <div className=" bg-mainBoxBg rounded-[23px] border-4 border-[#A41C1C]  w-[47%] flex flex-col justify-evenly items-center relative">
+                        <div className=" w-full flex flex-col justify-evenly items-center gap-1 ">
                             <div className="w-[10vmin] sm:w-[6vmin] aspect-[72/74] relative  ">
                                 <Image
                                     src="/image/kinu_game.png"
@@ -172,13 +172,13 @@ export default function ClaimTimer() {
                                     objectFit="cover"
                                 />
                             </div>
-                            <p className={` text-white text-[5vmin] sm:text-[3vmin] mt-1 `}>MY KINU Point</p>
+                            <p className={` text-white text-[5vmin] sm:text-[3vmin] mt-1 font-subfont`}>KINU POINT</p>
                         </div>
-                        <p className=" w-[50%]  py-[2%] text-center text-[#FFCC00] text-[5.5vmin] sm:text-[3.5vmin]
+                        <p className=" w-full text-center text-[#FFCC00] text-[5.5vmin] sm:text-[3.5vmin]
                         active:scale-90 transition-transform duration-200">{n2o >= 1000000 ? `${n2o / 1000000}m` : n2o >= 1000 ? `${n2o / 1000}k` : n2o}</p>
                     </div>
-                    <div className=" py-[2.5%] bg-mainBoxBg rounded-[23px] border-4 border-[#A41C1C]  w-[47%] flex flex-col justify-between items-center relative">
-                        <div className=" w-full flex flex-col justify-evenly items-center gap-[10%] ">
+                    <div className=" bg-mainBoxBg rounded-[23px] border-4 border-[#A41C1C]  w-[47%] flex flex-col justify-evenly items-center relative">
+                        <div className=" w-full flex flex-col justify-evenly items-center gap-1 ">
                             <div className="w-[10vmin] sm:w-[6vmin] aspect-[72/74] relative  ">
                                 <Image
                                     src="/image/kinu_game.png"
@@ -187,9 +187,9 @@ export default function ClaimTimer() {
                                     objectFit="cover"
                                 />
                             </div>
-                            <p className={` text-white text-[5vmin] sm:text-[3vmin] mt-1 `}>KINU AI PASS</p>
+                            <p className={` text-white text-[5vmin] sm:text-[3vmin] mt-1 font-subfont`}>KINU AI PASS</p>
                         </div>
-                        <p className=" w-[50%] py-[2%] text-center text-[#FFCC00] text-[5.5vmin] sm:text-[3.5vmin]
+                        <p className=" w-full text-center text-[#FFCC00] text-[5.5vmin] sm:text-[3.5vmin]
                         active:scale-90 transition-transform duration-200">{tickets}</p>
                     </div>
                 </div>
