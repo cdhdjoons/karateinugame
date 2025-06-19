@@ -144,9 +144,9 @@ export default function ClaimTimer() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.3 }}
             >
-                <div className="  w-[90%] h-[13%] flex flex-col gap-[5%] justify-evenly items-center relative">
+                <div className="  w-[90%] h-[12%] flex flex-col justify-evenly items-center relative ">
                     <a href="https://x.com/" target="_blank" rel="noopener noreferrer" 
-                    className=" bg-cover bg-center bg-no-repeat  aspect-[345/61] flex justify-evenly items-center w-full py-[1%] px-4"
+                    className=" bg-contain bg-center bg-no-repeat flex justify-evenly items-center w-full h-full py-[1%] px-4"
                     style={{backgroundImage: 'url(/image/kinu_x_bg.svg)'}}
                     >
                         <div className="w-[8vmin] sm:w-[5vmin] aspect-[60/60] relative  ">
@@ -158,12 +158,12 @@ export default function ClaimTimer() {
                             />
                         </div>
                         <p className="text-white text-[4vmin] sm:text-[2vmin]">Join our X , earn KINU Point</p>
-                        <p className="text-white h-full mt-[7%] font-bold">...</p>
+                        <p className="text-white h-full mt-[18%] font-bold">...</p>
                     </a>
                 </div>
-                <div className=" w-[90%] h-[20%] flex justify-evenly  ">
-                    <div className=" py-[2.5%] bg-mainBoxBg border-4 border-[#A41C1C] rounded-[23px] w-[45%] flex flex-col justify-between items-center relative">
-                        <div className=" w-full flex flex-col justify-evenly items-center gap-[10%]   ">
+                <div className=" w-full h-[20%] flex justify-evenly  ">
+                    <div className=" py-[2.5%] bg-mainBoxBg border-4 border-[#A41C1C] rounded-[23px] w-[47%] flex flex-col justify-between items-center relative">
+                        <div className=" w-full flex flex-col justify-evenly items-center">
                             <div className="w-[10vmin] sm:w-[6vmin] aspect-[72/74] relative  ">
                                 <Image
                                     src="/image/kinu_game.png"
@@ -172,12 +172,12 @@ export default function ClaimTimer() {
                                     objectFit="cover"
                                 />
                             </div>
-                            <p className={` text-white text-[5vmin] sm:text-[3vmin] font-bold mt-1 `}>MY HUMP Point</p>
+                            <p className={` text-white text-[5vmin] sm:text-[3vmin] mt-1 `}>MY KINU Point</p>
                         </div>
                         <p className=" w-[50%]  py-[2%] text-center text-[#FFCC00] text-[5.5vmin] sm:text-[3.5vmin]
                         active:scale-90 transition-transform duration-200">{n2o >= 1000000 ? `${n2o / 1000000}m` : n2o >= 1000 ? `${n2o / 1000}k` : n2o}</p>
                     </div>
-                    <div className=" py-[2.5%] bg-mainBoxBg rounded-[23px] border-4 border-[#A41C1C]  w-[45%] flex flex-col justify-between items-center relative">
+                    <div className=" py-[2.5%] bg-mainBoxBg rounded-[23px] border-4 border-[#A41C1C]  w-[47%] flex flex-col justify-between items-center relative">
                         <div className=" w-full flex flex-col justify-evenly items-center gap-[10%] ">
                             <div className="w-[10vmin] sm:w-[6vmin] aspect-[72/74] relative  ">
                                 <Image
@@ -187,14 +187,14 @@ export default function ClaimTimer() {
                                     objectFit="cover"
                                 />
                             </div>
-                            <p className={` text-white text-[5vmin] sm:text-[3vmin] font-bold mt-1 `}>My Tickets</p>
+                            <p className={` text-white text-[5vmin] sm:text-[3vmin] mt-1 `}>KINU AI PASS</p>
                         </div>
                         <p className=" w-[50%] py-[2%] text-center text-[#FFCC00] text-[5.5vmin] sm:text-[3.5vmin]
                         active:scale-90 transition-transform duration-200">{tickets}</p>
                     </div>
                 </div>
                 <div className="w-full h-[13%] flex justify-center items-center relative ">
-                    <div className="w-[90%] py-[5%] px-[3%] h-full sm:w-[90%] relative flex justify-between items-center rounded-[23px] bg-mainBoxBg">
+                    <div className="w-[95%] py-[5%] px-[3%] h-full sm:w-[90%] relative flex justify-between items-center rounded-[23px] bg-mainBoxBg">
                         <div className="w-[70%] flex justify-center gap-[5%] items-center font-subfont ">
                             <p className="  text-[#E55E00] text-[4vmin] sm:text-[2.5vmin] font-bold">Earn 2,000 KINU</p>
                             <p className=" text-[#808080] text-[4vmin] sm:text-[2.5vmin] font-bold ">{formatTime(time)}</p>
